@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+<h1>
+    Cars
+</h1>
+<form>
+    <input name="q">
+    <button type="submit">Search</button>
+</form>
+<ul>
+    {% for car in cars %}
+        <li>
+        {{ car.manufacture }} - {{ car.model }}
+        </li>
+    {% endfor %}
+
+</ul>
+</body>
+</html>
